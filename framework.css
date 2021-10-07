@@ -333,4 +333,89 @@ form input[type="submit"]:hover {
 }
 
 
+/* ----------------------------------- */
+
+/* input[type=radio] {
+    display: none;
+} */
+
+input[type=radio] {
+    position: relative;
+    padding-left: 28px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin: 5px 5px;
+    transition: 200ms;
+}
+
+input[type=radio]{
+    transform: scale(1.2);
+}
+
+input[type=radio]{
+    content: "";
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    display: inline-block;
+    margin-right: 20px;
+    transition: 200ms;
+}
+
+input[type=radio]{
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+
+    transition: 600ms;
+}
+
+input[type=radio]:checked{
+    border-color: rgb(0, 0, 0);
+}
+
+input[type=radio]:checked{
+    background-color: rgb(0, 0, 0);
+}
+
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]{
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    background-color: rgb(255, 41, 41);
+    border-radius: 30px;
+    position: relative;
+    transition: 200ms;
+    margin: 0 10px;
+
+}
+
+input[type=checkbox] + label.switch::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 2px;
+    top: 2px;
+    transition: 200ms;
+}
+
+input[type=checkbox]:checked + label.switch::before {
+    left: 22px;
+}
+
+input[type=checkbox]:checked + label.switch {
+    background-color: rgb(14, 188, 14);
+}
+
 
